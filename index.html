@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Agenda de Contatos</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./images/agenda.png" alt="Icone de um caderno de agenda e um lápis">
+            <h1>Agenda de Contatos</h1>
+        </div>
+    </header>
+
+    <form id="form">
+        <div class="container">
+            <div class="form-control">
+                <input id="nome" type="text" placeholder="Insira o nome do contato"  >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>mensagem</small>
+            </div> 
+            <div class="form-control">
+                <input id="telefone" type="tel" placeholder="Telefone: '(xx)9xxxx-xxxx'">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>mensagem</small>
+            </div>    
+            <button type="submit" id="btn-inserir">Inserir</button>
+        </div>
+    </form>
+
+    <div class="table-container">
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+            <tfoot aria-colspan="2">
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

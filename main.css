@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1036px;
+    margin: 40px auto 0 auto;
+    display: flex;
+}
+
+h2{
+    font-size: 32px;
+}
+
+header .container{
+    background-color:#F2F2F2 ;
+    padding: 40px;
+}
+header img{
+    width: 40px;
+    margin-right: 16px;
+    
+}
+
+form .container{
+    margin-top: 0;
+    background-color:#F2F2F2 ;
+    padding: 0px 40px 20px 40px;
+    gap: 5px;
+
+}
+
+form input {
+    font-size: 16px;
+    height: 38px;
+    padding: 10px;
+}
+
+input#nome {
+    width: 410px;
+}
+
+input#telefone{
+    width: 280px;
+}
+
+.form-control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-inserir{
+    flex:1;
+    align-self: start;
+    height: 38px;
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #fff;
+    background-color: #60689F;
+    border: 0;
+    cursor: pointer;
+}
+
+#btn-inserir:hover{
+    background-color: #8B93CA;
+}
+
+/* ERROS FORMULARIO */
+
+.form-control.error input {
+    border: 1px solid #e03131;
+}
+
+.form-control.success input {
+    border: 1px solid #2f9e44;
+}
+
+.form-control small{
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #e03131;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color: #2f9e44;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible; 
+    color:#e03131;
+}
+
+/* TABELA */
+
+.table-container {
+    max-width: 1036px;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+table{
+    width: 100%;
+    padding-top: 20px;
+    background-color: #F2F2F2;
+}
+
+table th {
+    width: 50%;
+    font-size: 20px;
+    border-bottom: 2px solid #60689F;
+}
+table td {
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(96, 105, 159, 0.2);
+}
+
+table tfoot td {
+    padding: 5px;
+    background-color: #60689F;
+}
+
+
+
